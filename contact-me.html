@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Contact Form</title>
+  </head>
+  <body>
+    <h3>
+      <a name='contact'>Contact Information</a>
+    </h3>
+    <address>Fabio Aurora</address>
+    <address>Amazon and Web Developer</address>
+    <address>St Helens colledge</address>
+    <address>ST Helens, wa9 4be</address>
+    <address>(07)84758485</address>
+    <h2>Fabio@gmail.com</h2>
+    <hr>
+
+<!--Inside the form tag/element we have some important attributes:
+  1- action='' (we can define an action as shown bellow, or send it to another page ect.)
+  2- method='' (we can put post or get in the method)
+  3- ectype='' we can define the encoding type, e.g. text/plain. -->
+  
+    <form action='mailto:fabiofmbalt1@gmail.com' method="post" enctype='text/plain'>
+      <label for="get-name">Name:</label>
+      <input id="get-name" type="text" name="Name: " value="" placeholder='First name'><br />
+      <label>Your Email:</label>
+      <input type='email' name='email: ' placeholder="e.g johndoe@gmail.com"  /><br>
+      <label for="">Your Message:</label><br>
+      <textarea name="message:" rows="10" cols="30"></textarea><br>
+      <input type="submit" name="">
+
+    </form>
